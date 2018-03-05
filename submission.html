@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <!--Metadata-->
         <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-touch-icon.png">
@@ -19,7 +19,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Find My Sushi" />
         <meta property="og:description" content="Find My Sushi helps you find the perfect Sushi spots around!" />
-        <meta property="og:url" content="https://findmysushi.com/" />
+        <meta property="og:url" content="https://sushi.karlocod.es/" />
         <meta property="og:site_name" content="Find My Sushi" />
         <meta property="og:logo" content="favicon/favicon.ico">
         <meta name="p:domain_verify" content="58f613022154e81a159184348f04294c"/>
@@ -47,19 +47,21 @@
         <div class="container add">
             <h2>Submit a Sushi Restaurant</h2>
             <form>
-                <input type="text" placeholder="Enter the name of the restaurant" />
-                <input type="text" placeholder="Description" />
+                <input required type="text" placeholder="Enter the name of the restaurant" />
+                <input required type="text" placeholder="Description" />
                 <div class="location">
-                    <input type="text" placeholder="Longitude" />
-                    <input type="text" placeholder="Latitude" />
+                    <input required type="number" step="any" id="lat" placeholder="Latitude" />
+                    <input required type="number" step="any" id="long" placeholder="Longitude" />
                 </div>
-                <input type="file" accept="image/*" />
-                <button class="buttonEffect" type="button">Submit</button>
+                <button class="buttonEffect currentLocation" type="button" onclick="currentLocation()">Use Current Location</button>
+                <input required type="file" accept="image/*" />
+                <button class="buttonEffect" type="submit">Submit</button>
             </form>
         </div>
         <div class="push"></div>
         <div class="footer">
             <p>Developed and designed by Karlo Delalic.</p>
         </div>
+        <script src="js/main.js" async defer></script>
     </body>
 </html>

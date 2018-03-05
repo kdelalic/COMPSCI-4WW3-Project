@@ -29,9 +29,9 @@
         <link rel="stylesheet" href="css/style.css"/>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-        <title>Find My Sushi - Wow Sushi</title>
+        <title>Find My Sushi - Hotaru Sushi</title>
     </head>
-    <body>
+    <body onload="hotaruSushi()">
         <div class="header">
             <a href="search.html">
                 <img src="img/logo.png" alt="sushiLogo"/>
@@ -50,7 +50,7 @@
                     <div class="leftTop">
                         <img src="img/sushi2.jpg" alt="sushiPlaceImage"/>
                         <div class="placeName">
-                            <h2>Wow Sushi</h2>
+                            <h2>Hotaru Sushi</h2>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -58,9 +58,9 @@
                             </div>
                         </div>
                     </div>
-                    <p class="description"><i>Wow Sushi's name speaks for itself. Wow!</i></p>
+                    <p class="description"><i>A great all you can eat sushi restaurant with nice decor.</i></p>
                 </div>
-                <img src="img/wowsushi.png" alt="Wow Sushi Map"/>
+                <div id="objectMap"></div>
             </div>
             <div class="review">
                 <div class="user">
@@ -78,7 +78,7 @@
                         <p class="date">1/22/2018</p>
                     </div>
                     <p>
-                        Wow sushi just slightly missed the mark from being a wow! The lunch deals were especially worth their prices, but everything felt a little sloppy for me unfortunately. 
+                        Hotaru sushi just slightly missed the mark from being a wow! The lunch deals were especially worth their prices, but everything felt a little sloppy for me unfortunately. 
                         <br><br>
                         We had their sushi lunch deal (miso soup, salad, 8 sushi and 8 pcs roll). It was plenty of food and definitely worth the money. The rolls were unassuming and did not standout. The sushi had some good pieces but other ones lacked refinement (thin and uneven slices of fish, un trimmed slices of fish)
                         <br><br>
@@ -111,5 +111,7 @@
         <div class="footer">
             <p>Developed and designed by Karlo Delalic.</p>
         </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3pnxJQcLr37sayYapBAHW3tnSEMFUbh4&libraries=places" async defer></script>
+        <script src="js/main.js" async defer></script>
     </body>
 </html>

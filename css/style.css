@@ -75,7 +75,7 @@ h2 {
 }
 
 .nav a:hover {
-    color: #aaa!important;
+    color: #aaa !important;
 }
 
 .nav a:visited {
@@ -204,13 +204,27 @@ input:focus {
     outline: none;
 }
 
+.locationBox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.locationBox h3 {
+    margin: 0;
+}
+
 /* HOME END */
 
 /* RESULTS START */
 
-.map {
+#map {
     height: 200px;
-    background: url("../img/map.png") no-repeat center;
     background-size: cover;
     max-width: 900px;
     width: 100%;
@@ -250,7 +264,7 @@ input:focus {
     align-content: center;
     text-decoration: none;
     color: black;
-    position:relative;
+    position: relative;
 }
 
 .result:hover {
@@ -266,7 +280,6 @@ input:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 .result .left {
@@ -335,7 +348,7 @@ input:focus {
 }
 
 .objectHead .left {
-    display: flex; 
+    display: flex;
     width: 50%;
     flex-direction: column;
     justify-content: flex-start
@@ -362,8 +375,9 @@ input:focus {
     margin-left: 30px;
 }
 
-.objectHead img {
+.objectHead #objectMap {
     height: 250px;
+    width: 250px;
     border-radius: 5px;
 }
 
@@ -424,7 +438,9 @@ input:focus {
 }
 
 /* OBJECT END */
+
 /* ADD RESTAURANT START */
+
 .add h2 {
     margin-top: 0;
     font-weight: 400;
@@ -453,8 +469,16 @@ input:focus {
 .location input:first-of-type {
     margin-right: 10px;
 }
+
+.currentLocation {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
 /* ADD RESTAURANT END */
+
 /* REGISTER START */
+
 .register img {
     height: 75px;
 }
@@ -473,7 +497,7 @@ input:focus {
 }
 
 .termsCheck {
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-self: flex-start;
     margin-top: 15px;
@@ -498,7 +522,6 @@ input:focus {
 
 .registerButtons .spacer {
     width: 10%;
-
 }
 
 /* REGISTER END */
@@ -529,12 +552,10 @@ input:focus {
     .header {
         margin: 0;
     }
-
     .container {
         padding: 50px 0;
         width: 100%;
     }
-    
     .push {
         margin: 0;
         height: 0;

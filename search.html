@@ -19,7 +19,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Find My Sushi" />
         <meta property="og:description" content="Find My Sushi helps you find the perfect Sushi spots around!" />
-        <meta property="og:url" content="https://findmysushi.com/" />
+        <meta property="og:url" content="https://sushi.karlocod.es/" />
         <meta property="og:site_name" content="Find My Sushi" />
         <meta property="og:logo" content="favicon/favicon.ico">
         <meta name="p:domain_verify" content="58f613022154e81a159184348f04294c"/>
@@ -62,10 +62,17 @@
                 </div>
                 <button class="buttonEffect" type="button">Search</button>
             </form>
+            <div class="locationBox">
+                <h3>OR</h3>
+                <button onclick="alertLocation()" class="buttonEffect" id="locationSearch" type="button">Find Sushi Near You</button>
+            </div>
         </div>
+
         <div class="push"> </div>
         <div class="footer">
             <p>Developed and designed by Karlo Delalic.</p>
         </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3pnxJQcLr37sayYapBAHW3tnSEMFUbh4&libraries=places" async defer></script>
+        <script src="js/main.js" async defer></script>
     </body>
 </html>

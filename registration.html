@@ -19,7 +19,7 @@
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Find My Sushi" />
         <meta property="og:description" content="Find My Sushi helps you find the perfect Sushi spots around!" />
-        <meta property="og:url" content="https://findmysushi.com/" />
+        <meta property="og:url" content="https://sushi.karlocod.es/" />
         <meta property="og:site_name" content="Find My Sushi" />
         <meta property="og:logo" content="favicon/favicon.ico">
         <meta name="p:domain_verify" content="58f613022154e81a159184348f04294c"/>
@@ -47,7 +47,7 @@
         <div class="container register">
             <img src="img/register.png" alt="Register image"/>
             <h2>Create your account</h2>
-            <form>
+            <form name="register" onsubmit="return validateForm()">
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="name" placeholder="John Doe" />
                 <label for="location">Location</label>
@@ -71,5 +71,6 @@
         <div class="footer">
             <p>Developed and designed by Karlo Delalic.</p>
         </div>
+        <script src="js/main.js" async defer></script>
     </body>
 </html>
